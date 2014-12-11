@@ -504,7 +504,7 @@
         },
 
         tryInitialize: function (persistentResponse, onInitialized) {
-            if (persistentResponse.Initialized) {
+            if (persistentResponse.Initialized && onInitialized) {
                 onInitialized();
             }
         },
